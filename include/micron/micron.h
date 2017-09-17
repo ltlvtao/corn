@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-#ifdef __GNUC__ >= 4
+#if defined(__GNUC__) && __GNUC__ > 3
 # define MC_EXTERN __attribute__((visibility("default")))
 #else
 # define MC_EXTERN /* nothing */

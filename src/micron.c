@@ -1,4 +1,36 @@
 #include "micron/micron.h"
+#include <stdio.h>
+
+#define STACK_SIZE 128 * 1024
+
+struct Schedule {
+  char stack[STACK_SIZE];
+};
+
+Schedule *
+mc_init(){
+  return NULL;
+}
+
+void
+mc_destroy(Schedule *sche){
+
+}
+
+int
+mc_new(Schedule *sche, void *ctx, mc_callback cb){
+  return 0;
+}
+
+void
+mc_resume(Schedule *sche, int co_id){
+
+}
+
+void
+mc_yield(Schedule *sche){
+
+}
 
 /*
 MIT License
