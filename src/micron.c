@@ -9,6 +9,7 @@ struct Schedule {
 
 Schedule *
 mc_init(){
+  printf("here mc_init.\r\n");
   return NULL;
 }
 
